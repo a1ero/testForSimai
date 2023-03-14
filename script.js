@@ -49,7 +49,7 @@ const button2 = new Component(
     { innerText: 'Кнопка 2'},
     ['btn', 'btn-info', 'btn-lg'],
     ['Кликни'],
-    { click: () => alert(' Ты кликнул на кнопку 2')}
+    { click: () => alert(' Ты кликнул на кнопку')}
 ).generate();
 
 const button3 = new Component(
@@ -57,7 +57,7 @@ const button3 = new Component(
     { innerText: 'Кнопка 3'},
     ['btn', 'btn-primary', 'btn-lg', 'active'],
     ['Кликни правой кнопкой мыши'],
-    {contextmenu: () => alert(' Ты кликнул ПКМ на кнопку 3')} //вместо alert я бы использовала popup, но в тз этого не было:)
+    {contextmenu: () => alert(' Ты кликнул ПКМ на кнопку')} //вместо alert я бы использовала popup, но в тз этого не было:)
 ).generate();
 
 
@@ -73,7 +73,7 @@ const button4 = new Component(
                     'span',
                     null,
                     ['help'],
-                    'Ты навел на кнопку 4',
+                    'Ты навел на кнопку',
                     null
                 ).generate();
                 button4.appendChild(help);
@@ -94,7 +94,7 @@ const button5 = new Component(
     { innerText: 'Кнопка 5'},
     ['btn', 'btn-secondary', 'btn-sm', 'active'],
     ['Сделай двойной клик'],
-    {dblclick: () => alert(' Ты сделал даблклик на кнопку 5')}
+    {dblclick: () => alert(' Ты сделал даблклик на кнопку')}
 ).generate();
 
 const button6 = new Component(
@@ -109,7 +109,7 @@ const button6 = new Component(
                     'span',
                     null,
                     ['retention'],
-                    'Ты удерживаешь кнопку 6, отпусти',
+                    'Ты удерживаешь кнопку, отпусти',
                     null
                 ).generate();
                 button6.appendChild(retention);
